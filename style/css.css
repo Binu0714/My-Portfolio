@@ -42,3 +42,67 @@ span{
 .nav-bar a.active{
     color: orange;
 }
+
+
+.home{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-content{
+    border: 1px solid orange;
+    border-radius: 15px;
+    max-width: 1200px;
+
+    position: relative;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.home-content h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.home-content h3{
+    text-align: center;
+}
+
+.home-content p{
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10% 0 10%;
+}
+
+.home-content .btn-container{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 30px;
+    padding: 3% 0 3% 0;
+    position: relative;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.btn-container a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    border: 2px solid orange;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
