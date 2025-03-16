@@ -450,3 +450,13 @@ h6{
 .education>:nth-child(3) em{
     color: orange;
 }
+
+/* Contact section */
+
+.contact{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
