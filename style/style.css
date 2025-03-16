@@ -460,3 +460,22 @@ h6{
     margin-right: 200px;
     margin-left: 200px;
 }
+
+.contact-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    background: rgb(33, 33, 33);
+    border-radius: 15px;
+}
+
+.left{
+    position: relative;
+    margin: 15px;
+
+    padding: 20px;
+}
+
+.left>:first-child{
+    margin-bottom: 30px;
+}
