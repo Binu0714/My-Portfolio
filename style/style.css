@@ -501,3 +501,25 @@ h6{
     color: white;
     font-size: 14px;
 }
+
+
+.mail{
+    padding: 20px;
+    display: flex;
+    border:1px solid gray;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.phone{
+    padding: 20px;
+    display: flex;
+    border:1px solid gray;
+    border-radius: 15px;
+}
+
+.icon{
+    padding-left: 100px;
+    padding-right: 30px;
+}
