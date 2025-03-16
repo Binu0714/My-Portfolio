@@ -523,3 +523,15 @@ h6{
     padding-left: 100px;
     padding-right: 30px;
 }
+
+.contact-submit{
+    background-color: #00b300;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
