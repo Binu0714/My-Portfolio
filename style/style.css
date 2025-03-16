@@ -161,3 +161,8 @@ span{
     font-size: 18px;
 }
 
+.grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
