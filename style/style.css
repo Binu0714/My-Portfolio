@@ -403,3 +403,32 @@ h6{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+
+
+.education>.education-grid div{
+    position: relative;
+    display: flex;
+    background: rgb(33, 33, 33);
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 20px;
+    margin-bottom: 50px;
+
+    border: 1px solid orange;
+    border-radius: 15px;
+}
+
+#school{
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+#ijse{
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    border-radius: 30px;
+}
