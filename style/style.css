@@ -351,3 +351,10 @@ h6{
     background:white;
     border-radius: 5px;
 }
+
+/* Assignments section */
+
+.assignment-main{
+    position: relative;
+    margin: 100px;
+}
