@@ -432,3 +432,21 @@ h6{
     padding: 15px;
     border-radius: 30px;
 }
+
+.education>:nth-child(3){
+    position: relative;
+    max-width: 800px;
+    border-radius: 10px;
+    background: rgb(33, 33, 33);
+    padding: 5px;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.education>:nth-child(3) em{
+    color: orange;
+}
