@@ -64,3 +64,18 @@ span{
     right: 0;
     margin: auto;
 }
+
+.home-content h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.home-content h3{
+    text-align: center;
+}
+
+.home-content p{
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10% 0 10%;
+}
