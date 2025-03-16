@@ -2,3 +2,16 @@ body{
     background: black;
     color: white;
 }
+
+/* header */
+
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
