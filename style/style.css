@@ -174,3 +174,52 @@ span{
     text-align: center;
     margin: 80px auto;
 }
+
+.img-div{
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 1300px;
+
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.img-div>img{
+    border: 1px solid orange;
+    border-radius: 10px;
+    width: 70px;
+
+    margin: 15px;
+}
+
+.row-2 {
+    position: relative;
+    left: -50%;
+}
+
+.img-div>#git{
+    background: white;
+}
+
+.technical>:nth-child(3){
+    position: relative;
+    max-width: 800px;
+    border-radius: 10px;
+    background: rgb(33, 33, 33);
+    padding: 5px;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.technical>:nth-child(3) em{
+    color: orange;
+}
