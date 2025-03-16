@@ -15,3 +15,14 @@ body{
     align-items: center;
     z-index: 100;
 }
+
+.logo{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+span{
+    color: orange;
+}
