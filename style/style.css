@@ -42,3 +42,25 @@ span{
 .nav-bar a.active{
     color: orange;
 }
+
+/*home section*/
+
+.home{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.home-content{
+    border: 1px solid orange;
+    border-radius: 15px;
+    max-width: 1200px;
+
+    position: relative;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
