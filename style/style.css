@@ -134,3 +134,15 @@ span{
     font-size: 16px;
     letter-spacing: 1px;
 }
+
+/*professional skills section*/
+
+.professional{
+    position: relative;
+    margin: 100px;
+}
+
+.skills{
+    font-size: 30px;
+    text-align: center;
+}
