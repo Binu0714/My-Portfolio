@@ -166,3 +166,11 @@ span{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+
+/*technical skills section*/
+
+.technical{
+    position: relative;
+    text-align: center;
+    margin: 80px auto;
+}
