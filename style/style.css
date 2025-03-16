@@ -107,3 +107,30 @@ span{
     border-radius: 20px;
     letter-spacing: 1px;
 }
+
+/*about me section*/
+
+.about-me{
+    max-width: 1200px;
+    display: flex;
+    margin: 80px auto;
+}
+
+.about-me>#about-content{
+    position: relative;
+    margin-right: 300px;
+    margin-left: 50px;
+}
+
+.about-me>#about-content img{
+    position: relative;
+}
+
+#about-content>#about-me{
+    font-size: 30px;
+}
+
+#about-content>p{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
