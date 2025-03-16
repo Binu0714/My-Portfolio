@@ -386,3 +386,20 @@ h6{
     font-size: 15px;
     border-radius: 10px;
 }
+
+/* Education section */
+
+.education{
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.education-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
