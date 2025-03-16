@@ -27,6 +27,10 @@ span{
     color: orange;
 }
 
+#menu-icon{
+    display:none ;
+}
+
 .nav-bar a{
     text-decoration: none;
     color: white;
