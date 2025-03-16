@@ -479,3 +479,25 @@ h6{
 .left>:first-child{
     margin-bottom: 30px;
 }
+
+.right{
+    position: relative;
+    background: rgb(33, 33, 33);
+    border-radius: 15px;
+    border: 1px solid orange;
+    margin: 20px;
+
+    padding: 20px;
+}
+
+.inputs{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555555;
+    color: white;
+    font-size: 14px;
+}
