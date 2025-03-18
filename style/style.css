@@ -267,6 +267,17 @@ h6{
     margin-top: 15px;
 }
 
+.github{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.git-icon{
+    width: 30px;
+    margin-left: 5px;
+}
+
 /*trainmate project section*/
 
 .trainmate{
@@ -293,11 +304,6 @@ h6{
 
 .trainmate>div:nth-child(2){
     margin-left: 30px;
-}
-
-.trainmate>div:nth-child(2) button{
-    background:white;
-    border-radius: 5px;
 }
 
 /*tictactoe project section*/
@@ -329,12 +335,6 @@ h6{
     margin-left: 30px;
 }
 
-.tictactoe>div:nth-child(2) button{
-    background:white;
-    border-radius: 5px;
-}
-
-
 /*student management project section*/
 
 .sms{
@@ -364,11 +364,6 @@ h6{
     margin-left: 30px;
 }
 
-.sms>div:nth-child(2) button{
-    background:white;
-    border-radius: 5px;
-}
-
 /* Assignments section */
 
 .assignment-main{
@@ -396,12 +391,6 @@ h6{
 .assignment-main>.assignment-grid>div h4{
     color: orange;
     font-size: 20px;
-}
-
-.assignment-main>.assignment-grid>div button{
-    padding: 8px;
-    font-size: 15px;
-    border-radius: 10px;
 }
 
 /* Education section */
