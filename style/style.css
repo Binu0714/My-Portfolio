@@ -67,6 +67,8 @@ span{
     left: 0;
     right: 0;
     margin: auto;
+
+    background: #555555;
 }
 
 .home-content h1{
@@ -89,7 +91,7 @@ span{
     justify-content: space-between;
     width: 320px;
     height: 30px;
-    padding: 3% 0 3% 0;
+    padding: 2% 0 2% 0;
     position: relative;
 
     top: 0;
@@ -119,13 +121,10 @@ span{
 
 .home-icon{
     position: relative;
-    margin-top: 40px;
-    margin-right: 450px;
-    margin-left: 450px;
+    gap: 20px;
 
     display: flex;
-
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 /*about me section*/
@@ -575,3 +574,4 @@ footer{
     padding-left: 50px;
     padding-right: 50px;
 }
+
