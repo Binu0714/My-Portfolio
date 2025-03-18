@@ -112,6 +112,11 @@ span{
     letter-spacing: 1px;
 }
 
+.btn-container>a:nth-child(2){
+    background: orange;
+    color: black;
+}
+
 .home-icon{
     position: relative;
     margin-top: 40px;
