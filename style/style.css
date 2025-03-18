@@ -112,6 +112,17 @@ span{
     letter-spacing: 1px;
 }
 
+.home-icon{
+    position: relative;
+    margin-top: 40px;
+    margin-right: 450px;
+    margin-left: 450px;
+
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
 /*about me section*/
 
 .about-me{
