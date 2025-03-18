@@ -67,8 +67,6 @@ span{
     left: 0;
     right: 0;
     margin: auto;
-
-    background: #555555;
 }
 
 .home-content h1{
@@ -555,7 +553,6 @@ h6{
     margin: 0 auto;
 }
 
-
 /* Footer section */
 
 footer{
@@ -574,4 +571,3 @@ footer{
     padding-left: 50px;
     padding-right: 50px;
 }
-
