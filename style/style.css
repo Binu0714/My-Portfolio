@@ -314,12 +314,16 @@ h6{
 }
 
 #trainmate-img{
-    width: 600px;
+    width: 550px;
+    height: 340px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .trainmate>div:nth-child(2){
     margin-left: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*tictactoe project section*/
@@ -342,13 +346,16 @@ h6{
 }
 
 #tictactoe-img{
-    width: 600px;
-    height: 366.3px;
+    width: 550px;
+    height: 340px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .tictactoe>div:nth-child(2){
     margin-left: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*student management project section*/
@@ -371,9 +378,10 @@ h6{
 }
 
 #sms-img{
-    width: 600px;
-    height: 366.3px;
+    width: 550px;
+    height: 340px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .sms>div:nth-child(2){
@@ -577,5 +585,84 @@ footer{
     padding-right: 50px;
 }
 
+@media all and (max-width: 1024px){
+    .home-content{
+        max-width: 824px;
+    }
+
+    .nav-bar a{
+        margin-left: 25px;
+    }
+
+    .about-me{
+        max-width: 824px;
+    }
+
+    .about-me>.about-grid>#about-content{
+        width: 300px;
+    }
+
+    .about-me>.about-grid>#about-right{
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+
+    .img-div{
+        max-width: 824px;
+    }
+
+    .technical>:nth-child(3){
+        max-width: 624px;
+    }
+
+    #trainmate-img{
+        width: 450px;
+        height: 275px;
+    }
+
+    #tictactoe-img{
+        width: 450px;
+        height: 275px;
+    }
+
+    #sms-img{
+        width: 450px;
+        height: 275px;
+    }
+
+    .project-inner-div{
+        height: 300px;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-left: 10px;
+    }
+
+    .h4{
+        margin-top: 0;
+    }
+
+    .prj-content{
+        font-size: 15px;
+    }
+
+    .education>:nth-child(3){
+        max-width: 624px;
+    }
+
+    #school{
+        width: 100px;
+        height: 100px;
+    }
+
+    #ijse{
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
 
 
