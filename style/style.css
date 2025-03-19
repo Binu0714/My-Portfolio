@@ -129,18 +129,34 @@ span{
 
 .about-me{
     max-width: 1200px;
-    display: flex;
-    margin: 80px auto;
+    margin: 100px auto;
 }
 
-.about-me>#about-content{
+.about-grid{
     position: relative;
-    margin-right: 300px;
-    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
-.about-me>#about-content img{
+.about-me>.about-grid>#about-content{
     position: relative;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+/*#my-img{*/
+/*    position: relative;*/
+/*    margin-left: 100px;*/
+/*}*/
+
+.about-me>.about-grid>#about-right{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 360px;
+    margin-left: 200px;
+    margin-top: 20px;
+    border: 2px solid orange;
 }
 
 #about-content>#about-me{
@@ -270,7 +286,7 @@ h6{
 .github{
     display: flex;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .git-icon{
@@ -560,3 +576,6 @@ footer{
     padding-left: 50px;
     padding-right: 50px;
 }
+
+
+
