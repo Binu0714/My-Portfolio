@@ -585,84 +585,265 @@ footer{
     padding-right: 50px;
 }
 
-@media all and (max-width: 1024px){
-    .home-content{
+@media all and (max-width: 1024px) {
+    .home-content {
         max-width: 824px;
     }
 
-    .nav-bar a{
+    .nav-bar a {
         margin-left: 25px;
     }
 
-    .about-me{
+    .about-me {
         max-width: 824px;
     }
 
-    .about-me>.about-grid>#about-content{
+    .about-me > .about-grid > #about-content {
         width: 300px;
     }
 
-    .about-me>.about-grid>#about-right{
+    .about-me > .about-grid > #about-right {
         margin-left: 80px;
         margin-top: 50px;
     }
 
-    .img-div{
+    .img-div {
         max-width: 824px;
     }
 
-    .technical>:nth-child(3){
+    .technical > :nth-child(3) {
         max-width: 624px;
     }
 
-    #trainmate-img{
+    #trainmate-img {
         width: 450px;
         height: 275px;
     }
 
-    #tictactoe-img{
+    #tictactoe-img {
         width: 450px;
         height: 275px;
     }
 
-    #sms-img{
+    #sms-img {
         width: 450px;
         height: 275px;
     }
 
-    .project-inner-div{
+    .project-inner-div {
         height: 300px;
         padding-right: 5px;
         padding-left: 5px;
         margin-left: 10px;
     }
 
-    .h4{
+    .h4 {
         margin-top: 0;
     }
 
-    .prj-content{
+    .prj-content {
         font-size: 15px;
     }
 
-    .education>:nth-child(3){
+    .education > :nth-child(3) {
         max-width: 624px;
     }
 
-    #school{
+    #school {
         width: 100px;
         height: 100px;
     }
 
-    #ijse{
+    #ijse {
         width: 100px;
         height: 100px;
     }
 
-    .contact{
+    .contact {
         margin-left: 100px;
         margin-right: 100px;
     }
 }
 
+    @media all and (max-width: 768px){
+        .nav-bar{
+            display: none;
+        }
 
+        #menu-icon{
+            display: block;
+            position: absolute;
+            width: 30px;
+
+            top: 0;
+            bottom: 0;
+            left: 600px;
+            right: 0;
+            margin: auto;
+        }
+
+        .home-content {
+            max-width: 668px;
+        }
+
+        .home-content h1{
+            font-size: 50px;
+        }
+
+        .home-content h3{
+            font-size: 20px;
+        }
+
+        .home-content p{
+            font-size: 15px;
+        }
+
+        .home-content .btn-container{
+            width: 280px;
+            height: 20px;
+        }
+
+        .btn-container a{
+            width: 130px;
+            height: 100%;
+        }
+
+        .about-grid{
+            width: 668px;
+        }
+
+        .about-me>.about-grid>#about-content{
+            margin-left: 60px;
+        }
+
+        .about-me>.about-grid>#about-right{
+            margin-left: 50px;
+        }
+
+        .grid{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .professional{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .professional>div>div:nth-child(3){
+            position: relative;
+            left: 50%;
+            right: 50%;
+        }
+
+        .technical{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .technical>:nth-child(3){
+           max-width: 600px;
+        }
+
+        .projects{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .trainmate{
+            flex-direction: column;
+        }
+
+        #trainmate-img{
+            width: 600px;
+            height: 350px;
+            margin-left: 20px;
+        }
+
+        .trainmate>div:nth-child(2) {
+            margin: 0;
+            text-align: center;
+            height: 210px;
+        }
+
+        .github{
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .tictactoe{
+            flex-direction: column;
+        }
+
+        #tictactoe-img{
+            width: 600px;
+            height: 350px;
+            margin-left: 20px;
+        }
+
+        .tictactoe>div:nth-child(2){
+            margin: 0;
+            text-align: center;
+            height: 210px;
+        }
+
+        .sms{
+            flex-direction: column;
+        }
+
+        #sms-img{
+            width: 600px;
+            height: 350px;
+            margin-left: 20px;
+        }
+
+        .sms>div:nth-child(2){
+            margin: 0;
+            text-align: center;
+            height: 210px;
+        }
+
+        .assignment-grid{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .assignment-main{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .assignment-main>div>div:nth-child(3){
+            position: relative;
+            left: 50%;
+            right: 50%;
+        }
+
+        .education-grid{
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        .education>:nth-child(3){
+            max-width: 600px;
+        }
+
+        .contact{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .contact-grid{
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        .right{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .left{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
