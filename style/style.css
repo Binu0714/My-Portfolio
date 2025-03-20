@@ -24,7 +24,7 @@ body{
 }
 
 span{
-    color: orange;
+    color: #fb8500;
 }
 
 #menu-icon{
@@ -32,19 +32,27 @@ span{
 }
 
 .nav-bar a{
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     margin-left: 50px;
 }
 
 .nav-bar a:hover{
-    color: orange;
+    color: #fb8500;
+}
+
+.nav-bar{
+    position: relative;
+    left: 120px;
 }
 
 .nav-bar a.active{
-    color: orange;
+    color: #fb8500;
 }
 
 /*home section*/
@@ -56,7 +64,7 @@ span{
 }
 
 .home-content{
-    border: 1px solid orange;
+    border: 1px solid #fb8500;
     border-radius: 15px;
     max-width: 1200px;
 
@@ -107,13 +115,13 @@ span{
     height: 100%;
     text-decoration: none;
     color: white;
-    border: 2px solid orange;
+    border: 2px solid #fb8500;
     border-radius: 20px;
     letter-spacing: 1px;
 }
 
 .btn-container>a:nth-child(2){
-    background: orange;
+    background: #fb8500;
     color: black;
 }
 
@@ -156,7 +164,7 @@ span{
     border-radius: 360px;
     margin-left: 200px;
     margin-top: 20px;
-    border: 2px solid orange;
+    border: 2px solid #fb8500;
 }
 
 #about-content>#about-me{
@@ -223,7 +231,7 @@ span{
 }
 
 .img-div>img{
-    border: 1px solid orange;
+    border: 1px solid #fb8500;
     border-radius: 10px;
     width: 70px;
 
@@ -254,7 +262,7 @@ span{
 }
 
 .technical>:nth-child(3) em{
-    color: orange;
+    color: #fb8500;
 }
 
 /*projects section*/
@@ -274,7 +282,7 @@ h4{
 
 h6{
     margin-top: 0;
-    color: orange;
+    color: #fb8500;
     font-size: 15px;
     margin-bottom: 0;
 }
@@ -413,7 +421,7 @@ h6{
 }
 
 .assignment-main>.assignment-grid>div h4{
-    color: orange;
+    color: #fb8500;
     font-size: 20px;
 }
 
@@ -445,7 +453,7 @@ h6{
     margin: 20px;
     margin-bottom: 50px;
 
-    border: 1px solid orange;
+    border: 1px solid #fb8500;
     border-radius: 15px;
 }
 
@@ -478,7 +486,7 @@ h6{
 }
 
 .education>:nth-child(3) em{
-    color: orange;
+    color: #fb8500;
 }
 
 /* Contact section */
@@ -514,7 +522,7 @@ h6{
     position: relative;
     background: rgb(33, 33, 33);
     border-radius: 15px;
-    border: 1px solid orange;
+    border: 1px solid #fb8500;
     margin: 20px;
 
     padding: 20px;
