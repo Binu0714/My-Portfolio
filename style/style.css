@@ -157,7 +157,7 @@ span{
 /*    margin-left: 100px;*/
 /*}*/
 
-.about-me>.about-grid>#about-right{
+.about-me>.about-grid>#about-right>div{
     position: relative;
     width: 300px;
     height: 300px;
@@ -269,10 +269,7 @@ span{
 
 .projects{
     position: relative;
-    margin-top: 150px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 100px;
 }
 
 h4{
@@ -315,10 +312,12 @@ h6{
     justify-content: space-evenly;
 
     top: 0;
-    bottom: 40px;
+    bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+
+    margin-bottom: 30px;
 }
 
 #trainmate-img{
@@ -346,11 +345,13 @@ h6{
     border-radius: 10px;
     justify-content: space-evenly;
 
-    top: 40px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+
+    margin-bottom: 30px;
 }
 
 #tictactoe-img{
@@ -378,11 +379,12 @@ h6{
     border-radius: 10px;
     justify-content: space-evenly;
 
-    top: 80px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+
 }
 
 #sms-img{
@@ -595,10 +597,17 @@ footer{
 
 @media all and (max-width: 1024px) {
     .home-content {
-        max-width: 824px;
+        max-width: 924px;
+    }
+
+    .logo{
+        position: relative;
+        right: 40px;
     }
 
     .nav-bar a {
+        position: relative;
+        right: 60px;
         margin-left: 25px;
     }
 
@@ -613,6 +622,10 @@ footer{
     .about-me > .about-grid > #about-right {
         margin-left: 80px;
         margin-top: 50px;
+    }
+
+    .about-me > .about-grid > #about-right>div{
+        margin-left: 0;
     }
 
     .img-div {
@@ -725,7 +738,12 @@ footer{
         }
 
         .about-me>.about-grid>#about-right{
-            margin-left: 50px;
+            position: relative;
+            margin-left: 65px;
+        }
+
+        .about-me>.about-grid>#about-right>div{
+            margin-left: 0;
         }
 
         .grid{
@@ -857,18 +875,28 @@ footer{
     }
 
 @media all and (max-width: 426px){
+    .header{
+        max-width: 425px;
+    }
     #menu-icon{
-        left: 350px;
+        left: 330px;
         width: 20px;
     }
 
     .logo{
         font-size: 15px;
+        left: 0;
+    }
+
+    .home{
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
 
     .home-content{
         margin-left: 10px;
         margin-right: 10px;
+        padding-bottom: 5px;
     }
 
     .home-content h1{
@@ -901,8 +929,12 @@ footer{
 
     .about-grid{
         grid-template-columns: repeat(1,1fr);
-        margin-left: 10px;
-        margin-right: 10px;
+        max-width: 425px;
+    }
+
+    .about-me{
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .about-me>.about-grid>#about-content{
@@ -915,7 +947,7 @@ footer{
     }
 
     .about-me>.about-grid>#about-right{
-        bottom: 350px;
+        bottom: 300px;
     }
 
     .about-me>.about-grid>#about-content p{
@@ -929,6 +961,8 @@ footer{
     .professional{
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .professional>div>div:nth-child(3){
@@ -940,6 +974,8 @@ footer{
     .technical{
         margin-left: 50px;
         margin-right: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .img-div{
@@ -965,6 +1001,8 @@ footer{
     .projects{
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #trainmate-img{
@@ -1042,6 +1080,7 @@ footer{
     .assignment-main{
         margin-right: 10px;
         margin-left: 10px;
+        margin-bottom: 30px;
     }
 
     .assignment-grid{
@@ -1057,6 +1096,8 @@ footer{
     .education{
         margin-right: 10px;
         margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #school{
@@ -1078,6 +1119,8 @@ footer{
     .contact{
         margin-right: 10px;
         margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .education-grid{
@@ -1109,6 +1152,7 @@ footer{
 
     footer{
         flex-direction: column;
+        max-width: 425px;
     }
 
     .footer-icon{
@@ -1117,6 +1161,10 @@ footer{
         width: 25px;
         height: 25px;
     }
+}
+
+@media all and (max-width: 375px){
+
 }
 
 
