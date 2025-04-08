@@ -6,14 +6,16 @@ body{
 /* header */
 
 .header{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     padding: 20px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background: black;
 }
 
 .logo{
@@ -48,7 +50,7 @@ span{
 
 .nav-bar{
     position: relative;
-    left: 120px;
+    left: 50px;
 }
 
 .nav-bar a.active{
@@ -60,7 +62,7 @@ span{
 .home{
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .home-content{
@@ -83,9 +85,13 @@ span{
 
 .home-content h3{
     text-align: center;
+    font-size: 30px;
 }
 
 .home-content p{
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 16px;
     text-align: center;
     padding: 0 10% 0 10%;
@@ -127,14 +133,15 @@ span{
 .home-icon{
     position: relative;
     gap: 20px;
-
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 /*about me section*/
 
 .about-me{
+    background: #555555;
     max-width: 1200px;
     margin: 100px auto;
 }
@@ -175,6 +182,7 @@ span{
 /*professional skills section*/
 
 .professional{
+    background: #555555;
     position: relative;
     margin: 100px;
 }
@@ -207,6 +215,7 @@ span{
 /*technical skills section*/
 
 .technical{
+    background: #555555;
     position: relative;
     text-align: center;
     margin: 80px auto;
@@ -264,6 +273,7 @@ span{
 /*projects section*/
 
 .projects{
+    background: #555555;
     position: relative;
     margin: 100px;
 }
@@ -394,6 +404,7 @@ h6{
 /* Assignments section */
 
 .assignment-main{
+    background: #555555;
     position: relative;
     margin: 100px;
 }
@@ -423,6 +434,7 @@ h6{
 /* Education section */
 
 .education{
+    background: #555555;
     position: relative;
     text-align: center;
     margin-top: 0;
@@ -487,6 +499,7 @@ h6{
 /* Contact section */
 
 .contact{
+    background: #555555;
     position: relative;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -572,6 +585,7 @@ h6{
 /* Footer section */
 
 footer{
+    background: #555555;
     position: relative;
     background: rgb(72, 30, 20);
 
