@@ -593,8 +593,8 @@ footer{
     width: 30px;
     height: 30px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 @media all and (max-width: 1024px) {
