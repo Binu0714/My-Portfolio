@@ -54,7 +54,7 @@ span{
     bottom: -5px;
     width: 0%;
     height: 2px;
-    background-color: #fb8500;
+    background-color: white;
     transition: width 0.3s ease-in-out;
 }
 
