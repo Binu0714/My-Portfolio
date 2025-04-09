@@ -53,7 +53,7 @@
     </section>
 
 <!-- about -->
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="about-grid">
             <div id="about-content">
                 <!-- About Me -->
@@ -132,7 +132,7 @@
     </section>
 
 <!-- Projects -->
-    <section class="projects">
+    <section class="projects" id="projects">
         <h2 class="skills">Innovative <span>Solutions</span> And <span>Projects</span> !</h2>
 
         <section class="trainmate">
@@ -327,7 +327,7 @@
                 <a href=""><img class="footer-icon" src="assets/footer/icons8-facebook-logo-100.png" width="50px" height="50px"></a>
             </div>
 
-            <p>© [Binu Jinajith] [2024]. All rights reserved.</p>
+            <p>© [Binu Jinajith] [2025]. All rights reserved.</p>
             <strong>Designed by Binu</strong>
         </footer>
     </section>
