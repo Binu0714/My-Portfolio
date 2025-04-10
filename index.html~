@@ -40,16 +40,10 @@
             <p>
                 A dedicated Software Engineering student passionate about web development, problem-solving, and creating efficient, user-friendly solutions. Always eager to learn and innovate.            </p>
             <div class="home-icon">
-                <a href=""><img  src="assets/footer/icons8-x-logo-100.png" width="30px" height="30px"></a>
-                <span>X</span>
-                <a href=""><img  src="assets/footer/icons8-linkedin-100.png" width="30px" height="30px"></a>
-                <span>LinkedIn</span>
-                <a href=""><img  src="assets/footer/icons8-instagram-logo-100.png" width="30px" height="30px"></a>
-                <span>Instagram</span>
-                <a href=""><img  src="assets/footer/icons8-github-logo-96.png" width="30px" height="30px"></a>
-                <span>GitHub</span>
-                <a href=""><img  src="assets/footer/icons8-facebook-logo-100.png" width="30px" height="30px"></a>
-                <span>Facebook</span>
+                <a href="https://www.linkedin.com/in/binu-jinajith-3424aa347/" target="_blank"><img  src="assets/footer/icons8-linkedin-100.png" width="30px" height="30px"></a>
+                <a href="https://www.instagram.com/binu_j18?igsh=Mnd0OHpha2s5czh3" target="_blank"><img  src="assets/footer/icons8-instagram-logo-100.png" width="30px" height="30px"></a>
+                <a href="https://github.com/Binu0714" target="_blank"><img  src="assets/footer/icons8-github-logo-96.png" width="30px" height="30px"></a>
+                <a href="https://www.facebook.com/share/1ANgAxJBRG/" target="_blank"><img  src="assets/footer/icons8-facebook-logo-100.png" width="30px" height="30px"></a>
             </div>
             <div class="btn-container">
                 <a href="">Explore</a>
@@ -326,7 +320,6 @@
         <footer>
             <div class="footer-center">
                 <h3><span>Connect With Me on Social Media</span></h3>
-                <a href=""><img class="footer-icon" src="assets/footer/icons8-x-logo-100.png" width="50px" height="50px"></a>
                 <a href=""><img class="footer-icon" src="assets/footer/icons8-linkedin-100.png" width="50px" height="50px"></a>
                 <a href=""><img class="footer-icon" src="assets/footer/icons8-instagram-logo-100.png" width="50px" height="50px"></a>
                 <a href=""><img class="footer-icon" src="assets/footer/icons8-github-logo-96.png" width="50px" height="50px"></a>
