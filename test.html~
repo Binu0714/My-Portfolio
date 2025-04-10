@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
+
+
+    <style>
+        body{
+            background: black;
+        }
+
+        .wrapper .button{
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            float: left;
+            margin: 0 5px;
+            background: white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .wrapper .button .icon{
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            border-radius: 50px;
+            box-sizing: border-box;
+            line-height: 30px;
+        }
+
+        .wrapper .button .icon i{
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        .wrapper .button span{
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 10px;
+            margin-left: 10px;
+        }
+
+        .wrapper .button:hover{
+            width: 120px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="button">
+            <div class="icon">
+                <i class="fa-brands fa-linkedin-in" style="color: #000000;"></i>
+            </div>
+            <span>LinkedIn</span>
+        </div>
+
+        <div class="button">
+            <div class="icon">
+                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+            </div>
+            <span>Instagram</span>
+        </div>
+
+        <div class="button">
+            <div class="icon">
+                <i class="fa-brands fa-github" style="color: #000000;"></i>
+            </div>
+            <span>Github</span>
+        </div>
+
+        <div class="button">
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f" style="color: #000000;"></i>
+            </div>
+            <span>Facebook</span>
+        </div>
+    </div>
+
+</body>
+</html>
