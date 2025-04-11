@@ -343,7 +343,7 @@ h6{
     margin-top: 15px;
 }
 
-a.github {
+a{
     text-decoration: none;
 }
 
@@ -510,6 +510,30 @@ a.github {
     color: #fb8500;
     font-size: 20px;
 }
+
+.assignment-btn{
+    border-radius: 10px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.assignment-btn:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+    background: #fb8500;
+    color: white;
+    font-weight: bold;
+}
+
 
 /* Education section */
 
