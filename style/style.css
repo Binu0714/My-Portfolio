@@ -506,6 +506,17 @@ a{
     margin: 20px;
 }
 
+.assignment-main>.assignment-grid>div:hover{
+    box-shadow: 0px 0px 10px #fb8500;
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.assignment-main>.assignment-grid>div:hover .assignment-btn{
+    background: #fb8500;
+    color: white;
+}
+
 .assignment-main>.assignment-grid>div h4{
     color: #fb8500;
     font-size: 20px;
@@ -682,6 +693,17 @@ a{
     cursor: pointer;
     display: block;
     margin: 0 auto;
+
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.contact-submit:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
 }
 
 /* Footer section */
