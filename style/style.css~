@@ -669,6 +669,7 @@ a{
 /* Contact section */
 
 .contact{
+    scroll-margin-top: 120px;
     position: relative;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -1071,6 +1072,7 @@ footer{
 
 @media all and (max-width: 426px){
     .header{
+        position: relative;
         max-width: 425px;
     }
     #menu-icon{
@@ -1361,6 +1363,7 @@ footer{
 @media all and (max-width: 376px){
 
     .header{
+        position: relative;
         max-width: 375px;
         padding: 20px 10px;
     }

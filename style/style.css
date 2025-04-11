@@ -1072,6 +1072,7 @@ footer{
 
 @media all and (max-width: 426px){
     .header{
+        position: relative;
         max-width: 425px;
     }
     #menu-icon{
