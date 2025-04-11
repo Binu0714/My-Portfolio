@@ -803,7 +803,7 @@ footer{
 
     .nav-bar a {
         position: relative;
-        right: 60px;
+        right: 30px;
         margin-left: 25px;
     }
 
@@ -1672,6 +1672,11 @@ footer{
         padding: 20px 10px;
     }
 
+    .logo{
+        font-size: 15px;
+        left: 25px;
+    }
+
     #menu-icon{
         left: 260px;
         width: 20px;
@@ -1718,7 +1723,7 @@ footer{
     .about-me>.about-grid>#about-right>div{
         width: 200px;
         height: 200px;
-        top: 0;
+        top: -20px;
     }
 
     .professional{
@@ -1746,6 +1751,10 @@ footer{
 
     .projects{
         max-width: 320px;
+    }
+
+    .github{
+        font-size: 10px;
     }
 
     .trainmate{
