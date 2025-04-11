@@ -82,7 +82,7 @@ span{
     margin-top: 150px;
 
     animation-name: fade;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: ease;
 }
 
