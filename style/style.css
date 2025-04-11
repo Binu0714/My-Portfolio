@@ -287,6 +287,12 @@ span{
     margin: 15px;
 }
 
+.img-div>img:hover{
+    box-shadow: 0px 0px 15px #fb8500;
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
 .row-2 {
     position: relative;
     left: 50%;
