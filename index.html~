@@ -47,8 +47,8 @@
                 <a href="https://www.facebook.com/share/1ANgAxJBRG/" target="_blank"><img  src="assets/footer/icons8-facebook-logo-100.png" width="30px" height="30px"></a>
             </div>
             <div class="btn-container">
-                <a href="">Explore</a>
-                <a href="">Contact Me</a>
+                <a href="">Download CV</a>
+                <a href="#contact">Contact Me</a>
             </div>
         </div>
     </section>
@@ -75,8 +75,9 @@
             </div>
             <div id="about-right">
                 <!-- Right Side -->
-                <div></div>
-<!--                <img id="my-img" src="assets/MyPic.jpg" alt="profile photo" width="250px">-->
+                <div>
+                    <img id="my-img" src="assets/MyPic.jpg" alt="profile photo" width="250px">
+                </div>
             </div>
         </div>
     </section>

@@ -77,26 +77,27 @@ span{
 /*home section*/
 
 .home{
+    scroll-margin-top: 200px;
     display: flex;
     align-items: center;
     margin-top: 150px;
 
     animation-name: fade;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 
-@keyframes fade {
-    from{
-        opacity: 0;
-        transform: translateY(-150px);
-    }
+/*@keyframes fade {*/
+/*    from{*/
+/*        opacity: 0;*/
+/*        transform: translateY(-150px);*/
+/*    }*/
 
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/*    to{*/
+/*        opacity: 1;*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*}*/
 
 .home-content{
     max-width: 1200px;
@@ -155,11 +156,25 @@ span{
     border: 2px solid #fb8500;
     border-radius: 20px;
     letter-spacing: 1px;
+
+    transition: transform 0.5s ease;
+}
+
+.btn-container a:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #fb8500;
 }
 
 .btn-container>a:nth-child(2){
     background: #fb8500;
     color: black;
+
+    transition: transform 0.5s ease;
+}
+
+.btn-container>a:nth-child(2):hover{
+    box-shadow: 0px 0px 15px #fb8500;
+    transform: scale(1.05);
 }
 
 .home-icon{
@@ -181,6 +196,7 @@ span{
 /*about me section*/
 
 .about-me{
+    scroll-margin-top: 150px;
     max-width: 1200px;
     margin: 100px auto;
 }
@@ -234,6 +250,7 @@ span{
 /*professional skills section*/
 
 .professional{
+    scroll-margin-top: 120px;
     position: relative;
     margin: 100px;
 }
@@ -340,6 +357,7 @@ span{
 /*projects section*/
 
 .projects{
+    scroll-margin-top: 120px;
     position: relative;
     margin: 100px;
 }
@@ -358,6 +376,7 @@ h6{
 
 .prj-content{
     margin-top: 15px;
+
 }
 
 a{
@@ -420,6 +439,13 @@ a{
     margin: auto;
 
     margin-bottom: 30px;
+
+    transition: transform 0.3s ease;
+}
+
+.trainmate:hover{
+    transform: scale(1.01);
+
 }
 
 #trainmate-img{
@@ -453,6 +479,11 @@ a{
     margin: auto;
 
     margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.tictactoe:hover{
+    transform: scale(1.01);
 }
 
 #tictactoe-img{
@@ -484,6 +515,11 @@ a{
     left: 0;
     right: 0;
     margin: auto;
+    transition: transform 0.3s ease;
+}
+
+.sms:hover{
+    transform: scale(1.01);
 }
 
 #sms-img{
@@ -502,6 +538,7 @@ a{
 /* Assignments section */
 
 .assignment-main{
+    scroll-margin-top: 120px;
     position: relative;
     margin: 100px;
 }
@@ -566,6 +603,7 @@ a{
 /* Education section */
 
 .education{
+    scroll-margin-top: 120px;
     position: relative;
     text-align: left;
     margin-top: 0;
@@ -644,6 +682,12 @@ a{
     grid-template-columns: repeat(2,2fr);
     background: rgb(33, 33, 33);
     border-radius: 15px;
+
+    transition: transform 0.3s ease;
+}
+
+.contact-grid:hover{
+    transform: scale(1.01);
 }
 
 .left{
