@@ -1516,7 +1516,7 @@ footer{
     }
 
     .github{
-        font-size: 10px;
+        font-size: 12px;
         width: 160px;
         height: 30px;
     }
@@ -1752,6 +1752,10 @@ footer{
 
     .projects{
         max-width: 320px;
+    }
+
+    .github{
+        font-size: 10px;
     }
 
     .trainmate{
