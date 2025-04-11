@@ -83,20 +83,20 @@ span{
 
     animation-name: fade;
     animation-duration: 3s;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
 }
 
-@keyframes fade {
-    from{
-        opacity: 0;
-        margin-top: 0;
-    }
+/*@keyframes fade {*/
+/*    from{*/
+/*        opacity: 0;*/
+/*        margin-top: 0;*/
+/*    }*/
 
-    to{
-        opacity: 1;
-        margin-top: 150px;
-    }
-}
+/*    to{*/
+/*        opacity: 1;*/
+/*        margin-top: 150px;*/
+/*    }*/
+/*}*/
 
 .home-content{
     max-width: 1200px;
@@ -343,31 +343,42 @@ h6{
     margin-top: 15px;
 }
 
-.github {
-    display: inline-flex;
+.github{
+    display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 12px 20px;
-    background-color: #ffffff;
-    color:  #24292e;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 500;
     border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-family: 'Segoe UI', sans-serif;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+
 }
 
-.github:hover {
-    background-color: #33383d;
-    transform: translateY(-2px);
+.github:hover{
+    box-shadow: 0px 0px 5px black;
+    transform: scale(1.02);
+    transition: 0.3s;
+    background: #fb8500;
+    color: white;
+    font-weight: bold;
 }
 
-.git-icon {
-    width: 24px;
-    height: 24px;
+.github:hover .git-icon {
+    filter: invert(1);
+    transform: rotate(360deg);
 }
 
+.git-icon{
+    width: 30px;
+    margin-left: 5px;
+    transition: transform 0.4s ease, filter 0.3s ease;
+}
 
 /*trainmate project section*/
 
@@ -462,6 +473,8 @@ h6{
 
 .sms>div:nth-child(2){
     margin-left: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Assignments section */
