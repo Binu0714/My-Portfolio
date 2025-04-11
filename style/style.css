@@ -621,7 +621,8 @@ a{
 
 .education>.education-grid div{
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     background: rgb(33, 33, 33);
     align-items: center;
     padding-right: 20px;
@@ -631,6 +632,10 @@ a{
 
     border: 1px solid #fb8500;
     border-radius: 15px;
+}
+
+.education>.education-grid div p span{
+    font-size: 18px;
 }
 
 #school{
