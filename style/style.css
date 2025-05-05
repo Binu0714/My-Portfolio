@@ -87,17 +87,17 @@ span{
     animation-timing-function: ease-in-out;
 }
 
-/*@keyframes fade {*/
-/*    from{*/
-/*        opacity: 0;*/
-/*        transform: translateY(-150px);*/
-/*    }*/
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
 
-/*    to{*/
-/*        opacity: 1;*/
-/*        transform: translateY(0);*/
-/*    }*/
-/*}*/
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .home-content{
     max-width: 1200px;
