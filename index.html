@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="assets/lib/normalize.css">
     <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
 </head>
@@ -83,7 +84,7 @@
     </section>
 
 <!-- professional skills -->
-    <section class="professional" id="skills">
+    <section class="professional" id="skills" data-aos="fade-up">
         <!-- Professional Skills -->
         <h2 class="skills">Professional <span>Skills !</span></h2>
         <div class="grid">
@@ -336,6 +337,14 @@
             <strong>Designed by Binu</strong>
         </footer>
     </section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000
+    });
+</script>
 
 </body>
 </html>
