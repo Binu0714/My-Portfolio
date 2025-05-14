@@ -34,7 +34,7 @@
     </header>
 
 <!-- home -->
-    <section class="home" id="home">
+    <section class="home" id="home" data-aos="fade-up">
         <div id class="home-content">
             <!-- Hero section -->
             <h1>Hello I'm <span>Binu Jinajith</span></h1>
@@ -55,7 +55,7 @@
     </section>
 
 <!-- about -->
-    <section class="about-me" id="about-me">
+    <section class="about-me" id="about-me" data-aos="fade-up">
         <div class="about-grid">
             <div id="about-content">
                 <!-- About Me -->
@@ -113,7 +113,7 @@
     </section>
 
 <!-- technical skills -->
-    <section class="technical">
+    <section class="technical" data-aos="fade-up">
         <!-- technical skills -->
         <h2 class="skills">Technical <span>Skills !</span></h2>
         <div class="img-div">
@@ -135,7 +135,7 @@
     </section>
 
 <!-- Projects -->
-    <section class="projects" id="projects">
+    <section class="projects" id="projects" data-aos="fade-up">
         <h2 class="skills">Innovative <span>Solutions</span> And <span>Projects</span> !</h2>
 
         <section class="trainmate">
@@ -213,7 +213,7 @@
     </section>
 
 <!-- Assignments -->
-    <section class="assignment-main" id="assignment">
+    <section class="assignment-main" id="assignment" data-aos="fade-up">
         <h2 class="skills">My <span>Assignments !</span></h2>
 
         <div class="assignment-grid">
@@ -251,7 +251,7 @@
     </section>
 
 <!-- Education -->
-    <section class="education" id="education">
+    <section class="education" id="education" data-aos="fade-up">
         <h2 class="skills"><span>Educational</span> Background !</h2>
 
         <div class="education-grid">
@@ -278,7 +278,7 @@
     </section>
 
 <!-- Contact me -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="fade-up">
         <h2 class="skills"><span>Contact Me !</span></h2>
 
         <div class="contact-grid">
@@ -322,7 +322,7 @@
     </section>
 
 <!-- footer -->
-    <section class="footer">
+    <section class="footer" data-aos="fade-up">
         <!-- Footer -->
         <footer>
             <div class="footer-center">
@@ -342,7 +342,7 @@
 
 <script>
     AOS.init({
-        duration: 500
+        duration: 1000
     });
 </script>
 
