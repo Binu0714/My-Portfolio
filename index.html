@@ -308,15 +308,15 @@
 
             <div class="right">
                 <label class="label">Name :</label><br>
-                <input class="inputs" type="text"><br>
+                <input class="inputs" type="text" id="name"><br>
 
                 <label class="label">Email :</label><br>
-                <input class="inputs" type="email"><br>
+                <input class="inputs" type="email" id="email"><br>
 
                 <label class="label">Messsage :</label><br>
-                <textarea class="inputs" placeholder="enter messege : " rows="10" cols="40"></textarea><br>
+                <textarea class="inputs" placeholder="enter messege : " rows="10" cols="40" id="message"></textarea><br>
 
-                <button class="contact-submit" type="submit">Send Message</button>
+                <button class="contact-submit" type="submit" id="send-btn">Send Message</button>
             </div>
         </div>
     </section>
@@ -344,6 +344,27 @@
 <script>
     AOS.init({
         duration: 1000
+    });
+</script>
+
+<script>
+    $('#send-btn').click(function(){
+        const phone = '94707431532';
+
+        const name = $('#name').val();
+        const email = $('#email').val();
+        const message = $('#message').val();
+
+        const fullMessage = `Contact Form Message\n\n` +
+            `Name : ${name}\n` +
+            `Email : ${email}\n` +
+            `Message : ${message}`;
+
+        const encodedMessage = encodeURIComponent(fullMessage);
+
+        const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+
+        window.open(url, '_blank');
     });
 </script>
 
