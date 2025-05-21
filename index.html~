@@ -34,7 +34,7 @@
     </header>
 
 <!-- home -->
-    <section class="home" id="home" data-aos="fade-up">
+    <section class="home" id="home" >
         <div id class="home-content">
             <!-- Hero section -->
             <h1>Hello I'm <span>Binu Jinajith</span></h1>
@@ -322,7 +322,7 @@
     </section>
 
 <!-- footer -->
-    <section class="footer" data-aos="fade-up">
+    <section class="footer">
         <!-- Footer -->
         <footer>
             <div class="footer-center">

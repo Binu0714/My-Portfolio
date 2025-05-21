@@ -420,6 +420,10 @@ a{
     transition: transform 0.4s ease;
 }
 
+.project-inner-div{
+    /*background: green;*/
+}
+
 /*trainmate project section*/
 
 .trainmate{
@@ -431,11 +435,11 @@ a{
     background: rgb(33, 33, 33);
     border-radius: 10px;
 
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: auto;*/
 
     margin-bottom: 30px;
 
@@ -486,6 +490,7 @@ a{
 }
 
 #tictactoe-img{
+    position: relative;
     width: 550px;
     height: 340px;
     border-radius: 10px;
@@ -493,6 +498,7 @@ a{
 }
 
 .tictactoe>div:nth-child(2){
+    position: relative;
     margin-left: 30px;
     padding-left: 10px;
     padding-right: 10px;
