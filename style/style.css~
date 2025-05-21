@@ -890,7 +890,7 @@ footer{
         .nav-bar {
             display: none;
             flex-direction: column;
-            background-color: rgba(0, 0, 0, 0.8); /* black with 80% opacity */
+            background-color: rgba(0, 0, 0, 0.9); /* black with 80% opacity */
             position: absolute;
             top: 60px;
             right: 20px;

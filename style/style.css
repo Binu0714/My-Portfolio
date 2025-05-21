@@ -886,6 +886,12 @@ footer{
     }
 }
 
+    @media (min-width: 769px) {
+        .nav-bar {
+            display: flex !important;
+        }
+    }
+
     @media all and (max-width: 768px){
         .nav-bar {
             display: none;
