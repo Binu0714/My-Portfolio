@@ -420,10 +420,6 @@ a{
     transition: transform 0.4s ease;
 }
 
-.project-inner-div{
-    /*background: green;*/
-}
-
 /*trainmate project section*/
 
 .trainmate{
@@ -435,11 +431,11 @@ a{
     background: rgb(33, 33, 33);
     border-radius: 10px;
 
-    /*top: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*margin: auto;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 
     margin-bottom: 30px;
 
@@ -490,7 +486,6 @@ a{
 }
 
 #tictactoe-img{
-    position: relative;
     width: 550px;
     height: 340px;
     border-radius: 10px;
@@ -498,7 +493,6 @@ a{
 }
 
 .tictactoe>div:nth-child(2){
-    position: relative;
     margin-left: 30px;
     padding-left: 10px;
     padding-right: 10px;
@@ -893,12 +887,28 @@ footer{
 }
 
     @media all and (max-width: 768px){
-        .nav-bar{
+        .nav-bar {
             display: none;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.8); /* black with 80% opacity */
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            z-index: 1000;
+        }
+
+
+        .nav-bar a {
+            color: white;
+            padding: 10px;
+            display: block;
         }
 
         #menu-icon{
             display: block;
+            cursor: pointer;
             position: absolute;
             width: 30px;
 

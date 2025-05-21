@@ -887,12 +887,28 @@ footer{
 }
 
     @media all and (max-width: 768px){
-        .nav-bar{
+        .nav-bar {
             display: none;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.9); /* black with 80% opacity */
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            z-index: 1000;
+        }
+
+
+        .nav-bar a {
+            color: white;
+            padding: 10px;
+            display: block;
         }
 
         #menu-icon{
             display: block;
+            cursor: pointer;
             position: absolute;
             width: 30px;
 

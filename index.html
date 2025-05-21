@@ -11,7 +11,6 @@
     <link rel="icon" type="image/icon" href="assets/title/WebIcon.jpg">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="assets/lib/normalize.css">
-    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
@@ -348,6 +347,33 @@
 </script>
 
 <script>
+
+    $(document).ready(function () {
+        // Toggle mobile menu on icon click
+        $('#menu-icon').click(function (e) {
+            e.stopPropagation(); // Prevent click from bubbling to document
+            $('.nav-bar').slideToggle(300);
+        });
+
+        // Close menu when clicking outside
+        $(document).click(function (e) {
+            if (!$(e.target).closest('.nav-bar, #menu-icon').length) {
+                $('.nav-bar').slideUp(300);
+            }
+        });
+
+        // Close menu when clicking a nav link
+        $('.nav-bar a').click(function () {
+            $('.nav-bar').slideUp(300);
+        });
+
+        // Optional: open drive popup (unchanged)
+        function openDrivePopup(url) {
+            window.open(url, 'driveWindow', 'width=800,height=600,resizable=yes,scrollbars=yes');
+        }
+    });
+
+
     $('#send-btn').click(function(){
         const phone = '94707431532';
 
