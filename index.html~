@@ -183,7 +183,7 @@
                         logical thinking, quick decision-making,
                         and is easy to learn yet challenging to master.
                     </p>
-                <a href="https://github.com/Binu0714" target="_blank"> <button class="github">Explore more on github<img class="git-icon" src="assets/technical%20skiils/icons8-github-64.png"></button></a>
+                <a href="https://github.com/Binu0714/Tik-Tac-Toe.git" target="_blank"> <button class="github">Explore more on github<img class="git-icon" src="assets/technical%20skiils/icons8-github-64.png"></button></a>
             </div>
         </section>
 
@@ -350,7 +350,7 @@
 
     $(document).ready(function () {
         $('#menu-icon').click(function (e) {
-            e.stopPropagation(); 
+            e.stopPropagation();
             $('.nav-bar').slideToggle(300);
         });
 

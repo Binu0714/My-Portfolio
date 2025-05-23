@@ -599,6 +599,13 @@ a{
     font-weight: bold;
 }
 
+.assignment-icon{
+    display: block;
+    margin: 10px auto; /* center the image horizontally */
+    width: 100px;       /* make the image bigger (adjust as needed) */
+    height: auto;
+}
+
 /* Education section */
 
 .education{
@@ -885,6 +892,12 @@ footer{
         margin-right: 100px;
     }
 }
+
+    @media (min-width: 769px) {
+        .nav-bar {
+            display: flex !important;
+        }
+    }
 
     @media all and (max-width: 768px){
         .nav-bar {
