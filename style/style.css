@@ -1,16 +1,24 @@
-body{
+body {
     background: black;
     color: white;
 }
 
-/* header */
+#night-sky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+}
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 20px 10%;
+    padding: 1.25rem 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,22 +26,22 @@ body{
     background: black;
 }
 
-.logo{
+.logo {
     font-size: 22px;
     color: white;
     text-decoration: none;
     font-weight: 500;
 }
 
-span{
+span {
     color: #fb8500;
 }
 
-#menu-icon{
-    display:none ;
+#menu-icon {
+    display: none;
 }
 
-.nav-bar a{
+.nav-bar a {
     position: relative;
     font-family: "Schibsted Grotesk", sans-serif;
     font-optical-sizing: auto;
@@ -42,68 +50,62 @@ span{
     color: white;
     font-size: 16px;
     font-weight: 500;
-
-    margin-left: 50px;
+    margin-left: 3.125rem;
 }
 
-.nav-bar a::after{
+.nav-bar a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -0.3125rem;
     width: 0%;
-    height: 2px;
+    height: 0.125rem;
     background-color: #fb8500;
     transition: width 0.3s ease-in-out;
 }
 
-.nav-bar a:hover::after{
+.nav-bar a:hover::after {
     width: 100%;
 }
 
-.nav-bar a:hover{
+.nav-bar a:hover {
     color: #fb8500;
 }
 
-.nav-bar{
+.nav-bar {
     position: relative;
-    left: 50px;
+    left: 3.125rem;
 }
 
-.nav-bar a.active{
+.nav-bar a.active {
     color: #fb8500;
 }
 
-/*home section*/
-
-.home{
-    scroll-margin-top: 200px;
+.home {
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+    scroll-margin-top: 12.5rem;
     display: flex;
     align-items: center;
-    margin-top: 150px;
-
+    margin-top: 9.375rem;
     animation-name: fade;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes fade {
-    from{
+    from {
         opacity: 0;
-        transform: translateY(-150px);
+        transform: translateY(-9.375rem);
     }
-
-    to{
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.home-content{
-    max-width: 1200px;
-
+.home-content {
     position: relative;
-
     top: 0;
     bottom: 0;
     left: 0;
@@ -111,17 +113,17 @@ span{
     margin: auto;
 }
 
-.home-content h1{
+.home-content h1 {
     text-align: center;
     font-size: 80px;
 }
 
-.home-content h3{
+.home-content h3 {
     text-align: center;
     font-size: 30px;
 }
 
-.home-content p{
+.home-content p {
     font-family: "Schibsted Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -130,14 +132,13 @@ span{
     padding: 0 10% 0 10%;
 }
 
-.home-content .btn-container{
+.home-content .btn-container {
     display: flex;
     justify-content: space-between;
-    width: 320px;
-    height: 30px;
+    width: 20rem;
+    height: 1.875rem;
     padding: 2% 0 2% 0;
     position: relative;
-
     top: 0;
     bottom: 0;
     left: 0;
@@ -145,44 +146,42 @@ span{
     margin: auto;
 }
 
-.btn-container a{
+.btn-container a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 9.375rem;
     height: 100%;
     text-decoration: none;
     color: white;
-    border: 2px solid #fb8500;
-    border-radius: 20px;
-    letter-spacing: 1px;
-
+    border: 0.125rem solid #fb8500;
+    border-radius: 1.25rem;
+    letter-spacing: 0.0625rem;
     transition: transform 0.5s ease;
 }
 
-.btn-container a:hover{
+.btn-container a:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 15px #fb8500;
+    box-shadow: 0 0 0.9375rem #fb8500;
 }
 
-.btn-container>a:nth-child(2){
+.btn-container>a:nth-child(2) {
     background: #fb8500;
     color: black;
-
     transition: transform 0.5s ease;
 }
 
-.btn-container>a:nth-child(2):hover{
-    box-shadow: 0px 0px 15px #fb8500;
+.btn-container>a:nth-child(2):hover {
+    box-shadow: 0 0 0.9375rem #fb8500;
     transform: scale(1.05);
 }
 
-.home-icon{
+.home-icon {
     position: relative;
-    gap: 20px;
+    gap: 1.25rem;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .home-icon > a {
@@ -193,37 +192,34 @@ span{
     transform: scale(1.3);
 }
 
-/*about me section*/
-
-.about-me{
-    scroll-margin-top: 150px;
-    max-width: 1200px;
-    margin: 100px auto;
+.about-me {
+    scroll-margin-top: 9.375rem;
+    margin: 6.25rem;
 }
 
-.about-grid{
+.about-grid {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.about-me>.about-grid>#about-content{
+.about-me>.about-grid>#about-content {
     position: relative;
-    margin-left: 100px;
-    margin-top: 20px;
+    margin-left: 6.25rem;
+    margin-top: 1.25rem;
 }
 
-.about-me>.about-grid>#about-right>div{
+.about-me>.about-grid>#about-right>div {
     position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 360px;
-    margin-left: 200px;
-    margin-top: 20px;
-    border: 2px solid #fb8500;
-    box-shadow: 0px 0px 25px #fb8500;
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 22.5rem;
+    margin-left: 12.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 0.125rem solid #fb8500;
+    box-shadow: 0 0 1.5625rem #fb8500;
     overflow: hidden;
-
     transition: transform 0.5s ease;
 }
 
@@ -234,45 +230,42 @@ span{
     display: block;
 }
 
-.about-me>.about-grid>#about-right>div:hover{
+.about-me>.about-grid>#about-right>div:hover {
     transform: scale(1.05);
 }
 
-#about-content>p{
-    letter-spacing: 1px;
-
+#about-content>p {
+    letter-spacing: 0.0625rem;
     font-family: "Schibsted Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 16px;
 }
 
-/*professional skills section*/
-
-.professional{
-    scroll-margin-top: 120px;
+.professional {
+    scroll-margin-top: 7.5rem;
     position: relative;
-    margin: 100px;
+    margin: 6.25rem;
 }
 
-.skills{
+.skills {
     font-size: 30px;
     text-align: center;
 }
 
-.skill-set{
+.skill-set {
     background: white;
-    margin: 20px;
+    margin: 1.25rem;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     color: black;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     transition: transform 0.5s ease;
 }
 
-.skill-set:hover{
-    box-shadow: 0px 0px 10px #fb8500;
+.skill-set:hover {
+    box-shadow: 0 0 0.625rem #fb8500;
     background: rgb(33, 33, 33);
     transform: scale(1.02);
     color: white;
@@ -281,49 +274,45 @@ span{
 .skill-set:hover h4 {
     color: #fb8500;
 }
-.skill-set>h4{
+
+.skill-set>h4 {
     font-size: 18px;
 }
 
-.grid{
+.grid {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-/*technical skills section*/
-
-.technical{
+.technical {
     position: relative;
     text-align: center;
-    margin: 80px auto;
+    margin: 6.25rem;
 }
 
-.img-div{
+.img-div {
     position: relative;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(6, 1fr);
-    max-width: 1300px;
-
+    max-width: 81.25rem;
     margin: 0 auto;
     justify-items: center;
     align-items: center;
-
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
-.img-div>img{
-    border: 1px solid #fb8500;
-    border-radius: 10px;
-    width: 70px;
-    margin: 15px;
-
+.img-div>img {
+    border: 0.0625rem solid #fb8500;
+    border-radius: 0.625rem;
+    width: 4.375rem;
+    margin: 0.9375rem;
     transition: transform 0.5s ease;
 }
 
-.img-div>img:hover{
-    box-shadow: 0px 0px 15px #fb8500;
+.img-div>img:hover {
+    box-shadow: 0 0 0.9375rem #fb8500;
     transform: scale(1.1);
 }
 
@@ -332,17 +321,16 @@ span{
     left: 50%;
 }
 
-.img-div>#git{
+.img-div>#git {
     background: white;
 }
 
-.technical>:nth-child(3){
+.technical>:nth-child(3) {
     position: relative;
-    max-width: 800px;
-    border-radius: 10px;
+    max-width: 50rem;
+    border-radius: 0.625rem;
     background: rgb(33, 33, 33);
-    padding: 5px;
-
+    padding: 0.3125rem;
     top: 0;
     bottom: 0;
     left: 0;
@@ -350,59 +338,57 @@ span{
     margin: auto;
 }
 
-.technical>:nth-child(3) em{
+.technical>:nth-child(3) em {
     color: #fb8500;
 }
 
-/*projects section*/
+/*Projects Section*/
 
-.projects{
-    scroll-margin-top: 120px;
+.projects {
+    scroll-margin-top: 7.5rem;
     position: relative;
-    margin: 100px;
+    margin: 6.25rem;
 }
 
-h4{
+h4 {
     font-size: 25px;
     margin-bottom: 0;
 }
 
-h6{
+h6 {
     margin-top: 0;
     color: #fb8500;
     font-size: 15px;
     margin-bottom: 0;
 }
 
-.prj-content{
-    margin-top: 15px;
+.prj-content {
+    margin-top: 0.9375rem;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.github{
+.github {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     font-weight: 500;
     border: none;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
     cursor: pointer;
-
     font-family: "Schibsted Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 12px;
-
     transition: transform 0.3s ease;
 }
 
-.github:hover{
-    box-shadow: 0px 0px 5px black;
+.github:hover {
+    box-shadow: 0 0 0.3125rem black;
     transform: scale(1.02);
     background: #fb8500;
     color: white;
@@ -414,101 +400,88 @@ a{
     transform: rotate(360deg);
 }
 
-.git-icon{
-    width: 30px;
-    margin-left: 5px;
+.git-icon {
+    width: 1.875rem;
+    margin-left: 0.3125rem;
     transition: transform 0.4s ease;
 }
 
-/*trainmate project section*/
-
-.trainmate{
+.trainmate {
     position: relative;
-    max-width: 1100px;
+    max-width: 68.75rem;
     display: flex;
-    padding: 15px;
+    padding: 0.9375rem;
     flex-direction: row;
     background: rgb(33, 33, 33);
-    border-radius: 10px;
-
+    border-radius: 0.625rem;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-
-    margin-bottom: 30px;
-
+    margin-bottom: 1.875rem;
     transition: transform 0.3s ease;
 }
 
-.trainmate:hover{
+.trainmate:hover {
     transform: scale(1.01);
-
 }
 
-#trainmate-img{
-    width: 550px;
-    height: 340px;
-    border-radius: 10px;
-    margin: 10px;
+#trainmate-img {
+    /*width: 34.375rem;*/
+    /*height: 21.25rem;*/
+    border-radius: 0.625rem;
+    margin: 0.625rem;
 }
 
-.trainmate>div:nth-child(2){
-    margin-left: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+.trainmate>div:nth-child(2) {
+    margin-left: 1.875rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
 }
 
-/*tictactoe project section*/
-
-.tictactoe{
+.tictactoe {
     position: relative;
-    max-width: 1100px;
+    max-width: 68.75rem;
     background: rgb(33, 33, 33);
     display: flex;
     flex-direction: row;
-    padding: 15px;
-    border-radius: 10px;
-
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     transition: transform 0.3s ease;
 }
 
-.tictactoe:hover{
+.tictactoe:hover {
     transform: scale(1.01);
 }
 
-#tictactoe-img{
-    width: 550px;
-    height: 340px;
-    border-radius: 10px;
-    margin: 10px;
+#tictactoe-img {
+    /*width: 34.375rem;*/
+    /*height: 21.25rem;*/
+    border-radius: 0.625rem;
+    margin: 0.625rem;
 }
 
-.tictactoe>div:nth-child(2){
-    margin-left: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+.tictactoe>div:nth-child(2) {
+    margin-left: 1.875rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
 }
 
-/*student management project section*/
-
-.sms{
+.sms {
     position: relative;
-    max-width: 1100px;
+    max-width: 68.75rem;
     background: rgb(33, 33, 33);
     display: flex;
     flex-direction: row;
-    padding: 15px;
-    border-radius: 10px;
-
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
     top: 0;
     bottom: 0;
     left: 0;
@@ -517,81 +490,76 @@ a{
     transition: transform 0.3s ease;
 }
 
-.sms:hover{
+.sms:hover {
     transform: scale(1.01);
 }
 
-#sms-img{
-    width: 550px;
-    height: 340px;
-    border-radius: 10px;
-    margin: 10px;
+#sms-img {
+    width: 34.375rem;
+    height: 21.25rem;
+    border-radius: 0.625rem;
+    margin: 0.625rem;
 }
 
-.sms>div:nth-child(2){
-    margin-left: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+.sms>div:nth-child(2) {
+    margin-left: 1.875rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
 }
 
-/* Assignments section */
-
-.assignment-main{
-    scroll-margin-top: 120px;
+.assignment-main {
+    scroll-margin-top: 7.5rem;
     position: relative;
-    margin: 100px;
+    margin: 6.25rem;
 }
 
-.assignment-grid{
+.assignment-grid {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.assignment-main>.assignment-grid>div{
+.assignment-main>.assignment-grid>div {
     position: relative;
     background: rgb(33, 33, 33);
     text-align: center;
-    border-radius: 15px;
-
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 20px;
-
+    border-radius: 0.9375rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    margin: 1.25rem;
     transition: transform 0.5s ease;
 }
 
-.assignment-main>.assignment-grid>div:hover{
-    box-shadow: 0px 0px 10px #fb8500;
+.assignment-main>.assignment-grid>div:hover {
+    box-shadow: 0 0 0.625rem #fb8500;
     transform: scale(1.02);
 }
 
-.assignment-main>.assignment-grid>div:hover .assignment-btn{
+.assignment-main>.assignment-grid>div:hover .assignment-btn {
     background: #fb8500;
     color: white;
 }
 
-.assignment-main>.assignment-grid>div h4{
+.assignment-main>.assignment-grid>div h4 {
     color: #fb8500;
     font-size: 20px;
 }
 
-.assignment-btn{
-    border-radius: 10px;
+.assignment-btn {
+    border-radius: 0.625rem;
     border: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
     cursor: pointer;
-
     font-family: "Schibsted Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 12px;
 }
 
-.assignment-btn:hover{
+.assignment-btn:hover {
     transform: scale(1.02);
     transition: 0.3s;
     background: #fb8500;
@@ -599,66 +567,61 @@ a{
     font-weight: bold;
 }
 
-/* Education section */
-
-.education{
-    scroll-margin-top: 120px;
+.education {
+    scroll-margin-top: 7.5rem;
     position: relative;
     text-align: left;
     margin-top: 0;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+    margin-bottom: 6.25rem;
 }
 
-.education-grid{
+.education-grid {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
-
-.education>.education-grid div{
+.education>.education-grid div {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 2fr;
     background: rgb(33, 33, 33);
     align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 20px;
-    margin-bottom: 50px;
-
-    border: 1px solid #fb8500;
-    border-radius: 15px;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    margin: 1.25rem;
+    margin-bottom: 3.125rem;
+    border: 0.0625rem solid #fb8500;
+    border-radius: 0.9375rem;
 }
 
-.education>.education-grid div p span{
+.education>.education-grid div p span {
     font-size: 18px;
 }
 
-#school{
-    width: 120px;
-    height: 120px;
-    padding: 15px;
-    border-radius: 30px;
+#school {
+    width: 7.5rem;
+    height: 7.5rem;
+    padding: 0.9375rem;
+    border-radius: 1.875rem;
 }
 
-#ijse{
-    width: 120px;
-    height: 120px;
-    padding: 15px;
-    border-radius: 30px;
+#ijse {
+    width: 7.5rem;
+    height: 7.5rem;
+    padding: 0.9375rem;
+    border-radius: 1.875rem;
 }
 
-.education>:nth-child(3){
+.education>:nth-child(3) {
     position: relative;
     text-align: center;
-    max-width: 800px;
-    border-radius: 10px;
+    max-width: 50rem;
+    border-radius: 0.625rem;
     background: rgb(33, 33, 33);
-    padding: 5px;
-
+    padding: 0.3125rem;
     top: 0;
     bottom: 0;
     left: 0;
@@ -666,1240 +629,121 @@ a{
     margin: auto;
 }
 
-.education>:nth-child(3) em{
+.education>:nth-child(3) em {
     color: #fb8500;
 }
 
-/* Contact section */
-
-.contact{
-    scroll-margin-top: 120px;
+.contact {
+    scroll-margin-top: 7.5rem;
     position: relative;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    margin-right: 12.5rem;
+    margin-left: 12.5rem;
 }
 
-.contact-grid{
+.contact-grid {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2, 2fr);
     background: rgb(33, 33, 33);
-    border-radius: 15px;
-
+    border-radius: 0.9375rem;
     transition: transform 0.3s ease;
 }
 
-.contact-grid:hover{
+.contact-grid:hover {
     transform: scale(1.01);
 }
 
-.left{
+.left {
     position: relative;
-    margin: 15px;
-
-    padding: 20px;
+    margin: 0.9375rem;
+    padding: 1.25rem;
 }
 
-.left>:first-child{
-    margin-bottom: 30px;
+.left>:first-child {
+    margin-bottom: 1.875rem;
 }
 
-.right{
+.right {
     position: relative;
     background: rgb(33, 33, 33);
-    border-radius: 15px;
-    border: 1px solid #fb8500;
-    margin: 20px;
-
-    padding: 20px;
+    border-radius: 0.9375rem;
+    border: 0.0625rem solid #fb8500;
+    margin: 1.25rem;
+    padding: 1.25rem;
 }
 
-.inputs{
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+.inputs {
+    width: calc(100% - 1.25rem);
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+    margin-bottom: 1.25rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     background-color: #555555;
     color: white;
     font-size: 14px;
 }
 
-
-.mail{
-    padding: 20px;
+.mail {
+    padding: 1.25rem;
     display: flex;
-    border:1px solid gray;
-    border-radius: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border: 0.0625rem solid gray;
+    border-radius: 0.9375rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
-.phone{
-    padding: 20px;
+.phone {
+    padding: 1.25rem;
     display: flex;
-    border:1px solid gray;
-    border-radius: 15px;
+    border: 0.0625rem solid gray;
+    border-radius: 0.9375rem;
 }
 
-.icon{
-    padding-left: 100px;
-    padding-right: 30px;
+.icon {
+    padding-left: 6.25rem;
+    padding-right: 1.875rem;
 }
 
-.contact-submit{
+.contact-submit {
     background-color: #00b300;
     color: white;
     border: none;
-    border-radius: 20px;
-    padding: 8px 20px;
+    border-radius: 1.25rem;
+    padding: 0.5rem 1.25rem;
     font-size: 14px;
     cursor: pointer;
     display: block;
     margin: 0 auto;
-
     font-family: "Schibsted Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-
     transition: transform 0.5s ease;
 }
 
-.contact-submit:hover{
+.contact-submit:hover {
     transform: scale(1.02);
     color: white;
     font-weight: bold;
 }
 
-/* Footer section */
-
-footer{
+footer {
     position: relative;
     background: rgb(72, 30, 20);
-
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.footer-icon{
-    padding-top: 10px;
-    width: 30px;
-    height: 30px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+.footer-icon {
+    padding-top: 0.625rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
 }
-
-@media all and (max-width: 1024px) {
-    .home-content {
-        max-width: 924px;
-    }
-
-    .logo{
-        position: relative;
-        right: 40px;
-    }
-
-    .nav-bar a {
-        position: relative;
-        right: 30px;
-        margin-left: 25px;
-    }
-
-    .about-me {
-        max-width: 824px;
-    }
-
-    .about-me > .about-grid > #about-content {
-        width: 300px;
-    }
-
-    .about-me > .about-grid > #about-right {
-        margin-left: 80px;
-        margin-top: 50px;
-    }
-
-    .about-me > .about-grid > #about-right>div{
-        margin-left: 0;
-    }
-
-    .img-div {
-        max-width: 824px;
-    }
-
-    .technical > :nth-child(3) {
-        max-width: 624px;
-    }
-
-    #trainmate-img {
-        width: 450px;
-        height: 275px;
-    }
-
-    #tictactoe-img {
-        width: 450px;
-        height: 275px;
-    }
-
-    #sms-img {
-        width: 450px;
-        height: 275px;
-    }
-
-    .project-inner-div {
-        height: 300px;
-        padding-right: 5px;
-        padding-left: 5px;
-        margin-left: 10px;
-    }
-
-    .h4 {
-        margin-top: 0;
-    }
-
-    .prj-content {
-        font-size: 15px;
-    }
-
-    .education > :nth-child(3) {
-        max-width: 624px;
-    }
-
-    #school {
-        width: 100px;
-        height: 100px;
-    }
-
-    #ijse {
-        width: 100px;
-        height: 100px;
-    }
-
-    .contact {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-}
-
-    @media (min-width: 769px) {
-        .nav-bar {
-            display: flex !important;
-        }
-    }
-
-    @media all and (max-width: 768px){
-        .nav-bar {
-            display: none;
-            flex-direction: column;
-            background-color: rgba(0, 0, 0, 0.9); /* black with 80% opacity */
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            padding: 10px;
-            border-radius: 8px;
-            z-index: 1000;
-        }
-
-
-        .nav-bar a {
-            color: white;
-            padding: 10px;
-            display: block;
-        }
-
-        #menu-icon{
-            display: block;
-            cursor: pointer;
-            position: absolute;
-            width: 30px;
-
-            top: 0;
-            bottom: 0;
-            left: 600px;
-            right: 0;
-            margin: auto;
-        }
-
-        .home-content {
-            max-width: 668px;
-        }
-
-        .home-content h1{
-            font-size: 50px;
-        }
-
-        .home-content h3{
-            font-size: 20px;
-        }
-
-        .home-content p{
-            font-size: 15px;
-        }
-
-        .home-content .btn-container{
-            width: 280px;
-            height: 20px;
-        }
-
-        .btn-container a{
-            width: 130px;
-            height: 100%;
-        }
-
-        .about-grid{
-            width: 668px;
-        }
-
-        .about-me>.about-grid>#about-content{
-            margin-left: 60px;
-        }
-
-        .about-me>.about-grid>#about-right{
-            position: relative;
-            margin-left: 65px;
-        }
-
-        .about-me>.about-grid>#about-right>div{
-            margin-left: 0;
-        }
-
-        .grid{
-            grid-template-columns: repeat(2,1fr);
-        }
-
-        .professional{
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        .professional>div>div:nth-child(3){
-            position: relative;
-            left: 50%;
-            right: 50%;
-        }
-
-        .technical{
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        .technical>:nth-child(3){
-           max-width: 600px;
-        }
-
-        .projects{
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        .trainmate{
-            flex-direction: column;
-        }
-
-        #trainmate-img{
-            width: 600px;
-            height: 350px;
-            margin-left: 20px;
-        }
-
-        .trainmate>div:nth-child(2) {
-            margin: 0;
-            text-align: center;
-            height: 210px;
-        }
-
-        .github{
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-
-        .tictactoe{
-            flex-direction: column;
-        }
-
-        #tictactoe-img{
-            width: 600px;
-            height: 350px;
-            margin-left: 20px;
-        }
-
-        .tictactoe>div:nth-child(2){
-            margin: 0;
-            text-align: center;
-            height: 210px;
-        }
-
-        .sms{
-            flex-direction: column;
-        }
-
-        #sms-img{
-            width: 600px;
-            height: 350px;
-            margin-left: 20px;
-        }
-
-        .sms>div:nth-child(2){
-            margin: 0;
-            text-align: center;
-            height: 210px;
-        }
-
-        .assignment-grid{
-            grid-template-columns: repeat(2,1fr);
-        }
-
-        .assignment-main{
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        .assignment-main>div>div:nth-child(3){
-            position: relative;
-            left: 50%;
-            right: 50%;
-        }
-
-        .education-grid{
-            grid-template-columns: repeat(1,1fr);
-        }
-
-        .education>:nth-child(3){
-            max-width: 600px;
-        }
-
-        .contact{
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        .contact-grid{
-            grid-template-columns: repeat(1,1fr);
-        }
-
-        .right{
-            margin-left: 100px;
-            margin-right: 100px;
-        }
-
-        .left{
-            margin-left: 100px;
-            margin-right: 100px;
-        }
-    }
-
-@media all and (max-width: 426px){
-    .header{
-        position: relative;
-        max-width: 425px;
-    }
-    #menu-icon{
-        left: 330px;
-        width: 20px;
-    }
-
-    .logo{
-        font-size: 18px;
-        left: 0;
-    }
-
-    .home{
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-
-    .home-content{
-        margin-left: 10px;
-        margin-right: 10px;
-        padding-bottom: 5px;
-    }
-
-    .home-content h1{
-        font-size: 35px;
-    }
-
-    .home-content h3{
-        font-size: 18px;
-    }
-
-    .home-content p{
-        font-size: 13px;
-    }
-
-    .home-content .btn-container{
-        width: 220px;
-        height: 20px;
-    }
-
-    .home-icon img{
-        width: 20px;
-        height: 20px;
-    }
-
-    .btn-container a{
-        width: 100px;
-        height: 100%;
-        font-size: 12px;
-    }
-
-    .about-grid{
-        grid-template-columns: repeat(1,1fr);
-        max-width: 425px;
-    }
-
-    .about-me{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .about-me>.about-grid>#about-content{
-        top: 340px;
-        width: 380px;
-
-        margin-left: 20px;
-        margin-right: 20px;
-        text-align: center;
-    }
-
-    .about-me>.about-grid>#about-right{
-        bottom: 300px;
-    }
-
-    .about-me>.about-grid>#about-content p{
-        font-size: 13px;
-    }
-
-    .grid{
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    .professional{
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .professional>div>div:nth-child(3){
-        position: relative;
-        left: 0;
-        right: 0;
-    }
-
-    .technical{
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .img-div{
-        grid-template-columns: repeat(3,1fr);
-    }
-
-    .row-2{
-       left: 0;
-    }
-
-    .img-div>img:nth-child(10){
-        left: 50%;
-    }
-
-    .img-div>img:nth-child(11){
-        left: 50%;
-    }
-
-    .technical>:nth-child(3){
-        font-size: 13px;
-    }
-
-    .projects{
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    #trainmate-img{
-        width: 380px;
-        height: 230px;
-
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .trainmate>.project-inner-div p{
-        font-size: 13px;
-    }
-
-    .trainmate>.project-inner-div h4{
-        font-size: 20px;
-    }
-
-    .github{
-        font-size: 14px;
-        width: 180px;
-        height: 30px;
-    }
-
-    .git-icon{
-        width: 25px;
-    }
-
-    #tictactoe-img{
-        width: 380px;
-        height: 230px;
-
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .tictactoe>.project-inner-div p{
-        font-size: 13px;
-    }
-
-    .tictactoe>.project-inner-div h4{
-        font-size: 20px;
-    }
-
-    #sms-img{
-        width: 380px;
-        height: 230px;
-
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .sms>.project-inner-div p{
-        font-size: 13px;
-    }
-
-    .sms>.project-inner-div h4{
-        font-size: 20px;
-    }
-
-    .project-inner-div{
-        position: relative;
-        top: 10px;
-    }
-
-    .assignment-main{
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-bottom: 30px;
-    }
-
-    .assignment-grid{
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    .assignment-main>div>div:nth-child(3){
-        position: relative;
-        left: 0;
-        right: 0;
-    }
-
-    .education{
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    #school{
-        width: 70px;
-        height: 70px;
-    }
-
-    #ijse{
-        width: 70px;
-        height: 70px;
-    }
-
-    .education > :nth-child(3) {
-        font-size: 13px;
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-
-    .contact{
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .education-grid{
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    .left{
-        margin-left: 25px;
-        width: 320px;
-    }
-
-    .left>div:nth-child(1){
-        width: 350px;
-    }
-
-    .right{
-        margin-left: 45px;
-        width: 280px;
-    }
-
-    .right textarea{
-        height: 70px;
-    }
-
-    .icon{
-        padding-left: 40px;
-        padding-right: 30px;
-    }
-
-    footer{
-        flex-direction: column;
-        max-width: 425px;
-    }
-
-    .footer-icon{
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 25px;
-        height: 25px;
-    }
-}
-
-@media all and (max-width: 376px){
-
-    .header{
-        max-width: 375px;
-        padding: 20px 10px;
-    }
-
-    #menu-icon{
-        left: 310px;
-        width: 20px;
-    }
-
-    .logo{
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 18px;
-        left: 30px;
-    }
-
-    .home{
-        max-width: 375px;
-    }
-
-    .home-content{
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    .home-content h1{
-        font-size: 25px;
-    }
-
-    .home-content h3{
-        font-size: 15px;
-    }
-
-    .home-content p{
-        font-size: 10px;
-        letter-spacing: 1px;
-    }
-
-    .home-content .btn-container{
-        width: 180px;
-        height: 18px;
-    }
-
-    .home-icon img{
-        width: 20px;
-        height: 20px;
-    }
-
-    .btn-container a{
-        width: 80px;
-        height: 100%;
-        font-size: 10px;
-    }
-
-    .about-me{
-        max-width: 375px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    .about-grid{
-        max-width: 365px;
-    }
-
-    .about-me>.about-grid>#about-content{
-        max-width: 375px;
-        top: 270px;
-        width: 365px;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .about-me>.about-grid>#about-content p{
-        font-size: 10px;
-        letter-spacing: 1px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .about-me>.about-grid>#about-right{
-        margin-left: 0;
-    }
-
-    .about-me>.about-grid>#about-right>div{
-        width: 220px;
-        height: 220px;
-
-        top: 30px;
-
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
-
-    .about-me>.about-grid>#about-content p{
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: 13px;
-    }
-
-    .professional{
-        max-width: 375px;
-        margin-top: 0;
-    }
-
-    .skills{
-        font-size: 25px;
-    }
-
-    .technical{
-        max-width: 375px;
-        width: 315px;
-
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .technical>.img-div{
-        width: 300px;
-    }
-
-    .technical>.img-div>img{
-        width: 65px;
-        height: 65px;
-    }
-
-    .technical>div:nth-child(3){
-        width: 290px;
-    }
-
-    .projects{
-        max-width: 375px;
-    }
-
-    #trainmate-img{
-        width: 325px;
-        height: 200px;
-    }
-
-    .trainmate>.project-inner-div h4{
-        font-size: 18px;
-    }
-
-    .trainmate>.project-inner-div h6{
-        font-size: 15px;
-    }
-
-    .trainmate>.project-inner-div p{
-        font-size: 12px;
-    }
-
-    .github{
-        font-size: 10px;
-        width: 160px;
-        height: 30px;
-    }
-
-    .git-icon{
-        width: 25px;
-    }
-
-    #tictactoe-img{
-        width: 325px;
-        height: 200px;
-    }
-
-    .tictactoe>.project-inner-div h4{
-        font-size: 18px;
-    }
-
-    .tictactoe>.project-inner-div h6{
-        font-size: 15px;
-    }
-
-    .tictactoe>.project-inner-div p{
-        font-size: 13px;
-    }
-
-    #sms-img{
-        width: 325px;
-        height: 200px;
-    }
-
-    .sms>.project-inner-div h4{
-        font-size: 18px;
-    }
-
-    .sms>.project-inner-div h6{
-        font-size: 15px;
-    }
-
-    .sms>.project-inner-div p{
-        font-size: 13px;
-    }
-
-    .assignment-main{
-        max-width: 375px;
-        margin-top: 30px;
-    }
-
-    .assignment-grid>div:first-child{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .assignment-grid>div:first-child h4{
-        font-size: 18px;
-    }
-
-    .assignment-grid>div:first-child p{
-        font-size: 13px;
-    }
-
-    .assignment-grid>div:nth-child(2){
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .assignment-grid>div:nth-child(2) h4{
-        font-size: 18px;
-    }
-
-    .assignment-grid>div:nth-child(2) p{
-        font-size: 13px;
-    }
-
-    .assignment-grid>div:nth-child(3){
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .assignment-grid>div:nth-child(3) h4{
-        font-size: 18px;
-    }
-
-    .assignment-grid>div:nth-child(3) p{
-        font-size: 13px;
-    }
-
-    .education{
-        max-width: 375px;
-    }
-
-    .education-grid>div:first-child{
-        margin-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .education-grid>div:nth-child(2){
-        margin-top: 10px;
-        margin-bottom: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .contact,.education-grid{
-        max-width: 375px;
-    }
-
-    .left{
-        margin-left: 0;
-        margin-right: 0;
-        padding: 10px;
-        width: 335px;
-        margin-bottom: 10px;
-    }
-
-    .contact-grid>.left>div:first-child{
-        width: 335px;
-    }
-
-    .contact-grid>.left>div:first-child h4{
-        margin-top: 10px;
-        font-size: 20px;
-    }
-
-    .right{
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 315px;
-        padding: 10px;
-        margin-top: 10px;
-    }
-
-    .footer{
-        max-width: 375px;
-    }
-
-    .footer-center{
-        height: 90px;
-    }
-
-    .footer-center h3{
-        margin-bottom: 10px;
-    }
-
-    footer p{
-        margin-bottom: 10px;
-    }
-}
-
-@media all and (max-width: 320px){
-
-    .header{
-        max-width: 320px;
-        padding: 20px 10px;
-    }
-
-    .logo{
-        font-size: 15px;
-        left: 25px;
-    }
-
-    #menu-icon{
-        left: 260px;
-        width: 20px;
-    }
-
-    .home{
-        max-width: 320px;
-    }
-
-    .home-content{
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    .btn-container a{
-        width: 80px;
-        height: 80%;
-        font-size: 10px;
-    }
-
-    .about-me{
-        max-width: 320px;
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-
-    .about-grid{
-        max-width: 320px;
-    }
-
-    .about-me>.about-grid>#about-content{
-        margin-left: 5px;
-        margin-right: 5px;
-        max-width: 310px;
-        margin-top: 0;
-        top: 220px;
-    }
-
-    .about-me>.about-grid>#about-right{
-        margin-left: 0;
-    }
-
-    .about-me>.about-grid>#about-right>div{
-        width: 200px;
-        height: 200px;
-        top: -20px;
-    }
-
-    .professional{
-        max-width: 320px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .technical{
-        max-width: 320px;
-        width: 320px;
-
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .technical>.img-div{
-        margin-bottom: 10px;
-    }
-
-    .technical>.img-div>img{
-        width: 50px;
-        height: 50px;
-    }
-
-    .projects{
-        max-width: 320px;
-    }
-
-    .trainmate{
-        height: 420px;
-    }
-
-    #trainmate-img{
-        width: 100%;
-        height: 160px;
-    }
-
-    .trainmate>.project-inner-div p{
-        font-size: 13px;
-    }
-
-    .tictactoe{
-        height: 390px;
-    }
-
-    #tictactoe-img{
-        width: 100%;
-        height: 160px;
-    }
-
-    .sms{
-        height: 390px;
-    }
-
-    #sms-img{
-        width: 100%;
-        height: 160px;
-    }
-
-    .sms>.project-inner-div{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .assignment-main{
-        max-width: 320px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .education{
-        max-width: 320px;
-    }
-
-    .education-grid>div:first-child{
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .education-grid>div:nth-child(2){
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .education>div:nth-child(3){
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .contact{
-        max-width: 320px;
-    }
-
-    .left{
-        width: 280px;
-    }
-
-    .contact-grid>.left>div:first-child{
-        width: 280px;
-    }
-
-    .mail{
-        padding: 10px;
-    }
-
-    .mail>img{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .phone{
-        padding: 10px;
-    }
-
-    .phone>img{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .right{
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 260px;
-    }
-
-    .footer{
-        max-width: 320px;
-    }
-
-    .footer-center img{
-        padding: 10px;
-    }
-
-    .footer-center h3{
-        font-size: 15px;
-    }
-
-    footer p{
-        font-size: 12px;
-    }
-
-    footer strong{
-        font-size: 12px;
-    }
-
-    .skills{
-        font-size: 23px;
-    }
-}
-
 
