@@ -510,66 +510,6 @@ a {
     padding-right: 0.625rem;
 }
 
-.assignment-main {
-    scroll-margin-top: 7.5rem;
-    position: relative;
-    margin: 6.25rem;
-}
-
-.assignment-grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.assignment-main>.assignment-grid>div {
-    position: relative;
-    background: rgb(33, 33, 33);
-    text-align: center;
-    border-radius: 0.9375rem;
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
-    margin: 1.25rem;
-    transition: transform 0.5s ease;
-}
-
-.assignment-main>.assignment-grid>div:hover {
-    box-shadow: 0 0 0.625rem #fb8500;
-    transform: scale(1.02);
-}
-
-.assignment-main>.assignment-grid>div:hover .assignment-btn {
-    background: #fb8500;
-    color: white;
-}
-
-.assignment-main>.assignment-grid>div h4 {
-    color: #fb8500;
-    font-size: 20px;
-}
-
-.assignment-btn {
-    border-radius: 0.625rem;
-    border: none;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    padding-right: 0.625rem;
-    padding-left: 0.625rem;
-    cursor: pointer;
-    font-family: "Schibsted Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 12px;
-}
-
-.assignment-btn:hover {
-    transform: scale(1.02);
-    transition: 0.3s;
-    background: #fb8500;
-    color: white;
-    font-weight: bold;
-}
-
 /*education section styling*/
 
 .education {
