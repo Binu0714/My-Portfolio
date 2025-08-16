@@ -570,57 +570,96 @@ a {
     font-weight: bold;
 }
 
-/*education section*/
+/*education section styling*/
 
 .education {
     scroll-margin-top: 7.5rem;
     position: relative;
     text-align: left;
-    margin-top: 0;
     margin-left: 6.25rem;
     margin-right: 6.25rem;
     margin-bottom: 6.25rem;
 }
 
-.education-grid {
+.timeline{
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: 100px auto;
 }
 
-.education>.education-grid div {
+.container{
+    padding: 10px 50px;
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    width: 50%;
+}
+
+.text-box{
+    padding: 2px 30px;
     background: rgb(33, 33, 33);
-    align-items: center;
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
-    margin: 1.25rem;
-    margin-bottom: 3.125rem;
-    border: 0.0625rem solid #fb8500;
-    border-radius: 0.9375rem;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    text-align: center;
 }
 
-.education>.education-grid div p span {
-    font-size: 18px;
+.left-container{
+    right: 10%;
 }
 
-#school {
-    width: 7.5rem;
-    height: 7.5rem;
-    padding: 0.9375rem;
-    border-radius: 1.875rem;
+.right-container{
+    left: 50%;
 }
 
-#ijse {
-    width: 7.5rem;
-    height: 7.5rem;
-    padding: 0.9375rem;
-    border-radius: 1.875rem;
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
 }
 
-.education>:nth-child(3) {
+.right-container img{
+    left: -20px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fb8500;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(33, 33, 33);
+    right: -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(33, 33, 33);
+    left: -15px;
+}
+
+#quote {
     position: relative;
     text-align: center;
     max-width: 50rem;
@@ -634,9 +673,11 @@ a {
     margin: auto;
 }
 
-.education>:nth-child(3) em {
+#quote em {
     color: #fb8500;
 }
+
+/*contact section styling*/
 
 .contact {
     scroll-margin-top: 7.5rem;
