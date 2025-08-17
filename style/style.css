@@ -265,22 +265,34 @@ span {
     background: white;
     margin: 1.25rem;
     text-align: center;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding: 1.25rem;
     color: black;
     border-radius: 0.9375rem;
-    transition: transform 0.5s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease, color 0.4s ease;
 }
 
 .skill-set:hover {
-    box-shadow: 0 0 0.625rem #fb8500;
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
     background: rgb(33, 33, 33);
-    transform: scale(1.02);
-    color: white;
+    color: #fb8500;
 }
+
+.skill-set h4 {
+    transition: color 0.4s ease;
+}
+
+.skill-set p {
+    transition: color 0.4s ease;
+}
+
 
 .skill-set:hover h4 {
     color: #fb8500;
+}
+
+.skill-set:hover p{
+    color: white;
 }
 
 .skill-set>h4 {
