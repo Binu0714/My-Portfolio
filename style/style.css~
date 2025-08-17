@@ -686,9 +686,10 @@ a {
 }
 
 .contact-nav {
-    color: white;
-    text-decoration: none;
+    color: white;           /* text color */
+    text-decoration: none;  /* remove underline */
 }
+
 
 /* footer section styling */
 
