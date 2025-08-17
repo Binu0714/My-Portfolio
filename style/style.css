@@ -192,7 +192,7 @@ span {
     transform: scale(1.3);
 }
 
-/* about me section */
+/* about me section styling */
 
 .about-me {
     scroll-margin-top: 9.375rem;
@@ -241,7 +241,7 @@ span {
     font-size: 16px;
 }
 
-/* professional skills section */
+/* professional skills section styling */
 
 .professional {
     scroll-margin-top: 7.5rem;
@@ -286,7 +286,7 @@ span {
     grid-template-columns: repeat(3, 1fr);
 }
 
-/*technical skills section*/
+/* technical skills section styling */
 
 .technical {
     position: relative;
@@ -345,28 +345,81 @@ span {
     color: #fb8500;
 }
 
-/*Projects Section*/
+/*Projects Section styling */
 
 .projects {
-    scroll-margin-top: 7.5rem;
-    position: relative;
     margin: 6.25rem;
+    text-align: center;
+    color: #fff;
 }
 
-h4 {
-    font-size: 25px;
-    margin-bottom: 0;
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-h6 {
-    margin-top: 0;
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    background: rgb(33, 33, 33);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin: 0 1rem;
+    min-width: 300px;
+    max-width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
     color: #fb8500;
-    font-size: 15px;
-    margin-bottom: 0;
 }
 
-.prj-content {
-    margin-top: 0.9375rem;
+.card-slogan {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #bbb;
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: 0.5rem; }
+.next { right: 0.5rem; }
+
+.nav-btn:hover {
+    box-shadow: 0 0 0.5rem #fb8500;
 }
 
 a {
@@ -388,10 +441,11 @@ a {
     font-style: normal;
     font-size: 12px;
     transition: transform 0.3s ease;
+    margin: 0 auto;
 }
 
 .github:hover {
-    box-shadow: 0 0 0.3125rem black;
+    box-shadow: 0 0 0.3125rem #fb8500;
     transform: scale(1.02);
     background: #fb8500;
     color: white;
@@ -409,108 +463,7 @@ a {
     transition: transform 0.4s ease;
 }
 
-.trainmate {
-    position: relative;
-    max-width: 68.75rem;
-    display: flex;
-    padding: 0.9375rem;
-    flex-direction: row;
-    background: rgb(33, 33, 33);
-    border-radius: 0.625rem;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-bottom: 1.875rem;
-    transition: transform 0.3s ease;
-}
-
-.trainmate:hover {
-    transform: scale(1.01);
-}
-
-#trainmate-img {
-    /*width: 34.375rem;*/
-    /*height: 21.25rem;*/
-    border-radius: 0.625rem;
-    margin: 0.625rem;
-}
-
-.trainmate>div:nth-child(2) {
-    margin-left: 1.875rem;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-}
-
-.tictactoe {
-    position: relative;
-    max-width: 68.75rem;
-    background: rgb(33, 33, 33);
-    display: flex;
-    flex-direction: row;
-    padding: 0.9375rem;
-    border-radius: 0.625rem;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-bottom: 1.875rem;
-    transition: transform 0.3s ease;
-}
-
-.tictactoe:hover {
-    transform: scale(1.01);
-}
-
-#tictactoe-img {
-    /*width: 34.375rem;*/
-    /*height: 21.25rem;*/
-    border-radius: 0.625rem;
-    margin: 0.625rem;
-}
-
-.tictactoe>div:nth-child(2) {
-    margin-left: 1.875rem;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-}
-
-.sms {
-    position: relative;
-    max-width: 68.75rem;
-    background: rgb(33, 33, 33);
-    display: flex;
-    flex-direction: row;
-    padding: 0.9375rem;
-    border-radius: 0.625rem;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: transform 0.3s ease;
-}
-
-.sms:hover {
-    transform: scale(1.01);
-}
-
-#sms-img {
-    width: 34.375rem;
-    height: 21.25rem;
-    border-radius: 0.625rem;
-    margin: 0.625rem;
-}
-
-.sms>div:nth-child(2) {
-    margin-left: 1.875rem;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-}
-
-/*education section styling*/
+/* education section styling */
 
 .education {
     scroll-margin-top: 7.5rem;
@@ -617,7 +570,7 @@ a {
     color: #fb8500;
 }
 
-/*contact section styling*/
+/* contact section styling */
 
 .contact {
     scroll-margin-top: 7.5rem;
@@ -715,6 +668,8 @@ a {
     font-weight: bold;
 }
 
+/* footer section styling */
+
 footer {
     position: relative;
     background: rgb(72, 30, 20);
@@ -732,4 +687,6 @@ footer {
     padding-left: 1.875rem;
     padding-right: 1.875rem;
 }
+
+
 
