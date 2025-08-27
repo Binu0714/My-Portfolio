@@ -22,12 +22,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
     z-index: 9999;
+    background: black;
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 1.375rem;
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -39,6 +39,9 @@ span {
 
 #menu-icon {
     display: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
 .nav-bar a {
@@ -81,11 +84,16 @@ span {
     color: #fb8500;
 }
 
+/* home section styling */
+
 .home {
+
+    position: relative;
     margin-left: 6.25rem;
     margin-right: 6.25rem;
     scroll-margin-top: 12.5rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 9.375rem;
     animation-name: fade;
@@ -106,11 +114,6 @@ span {
 
 .home-content {
     position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 
 .home-content h1 {
@@ -195,6 +198,7 @@ span {
 /* about me section styling */
 
 .about-me {
+    position: relative;
     scroll-margin-top: 9.375rem;
     margin: 6.25rem;
 }
@@ -204,6 +208,8 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
+    max-width: 81.25rem;
+    margin: 0 auto;
 }
 
 .about-me>.about-grid>#about-content {
@@ -303,6 +309,8 @@ span {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 81.25rem;
+    margin: 0 auto;
 }
 
 /* technical skills section styling */
@@ -617,6 +625,8 @@ a {
     background: rgb(33, 33, 33);
     border-radius: 0.9375rem;
     transition: transform 0.3s ease;
+    max-width: 81.25rem;
+    margin: 0 auto;
 }
 
 .contact-grid:hover {
@@ -733,4 +743,67 @@ footer {
 }
 
 
+/* 1024px and below (tablets/laptops) */
+@media (max-width: 1024px) {
+    .nav-bar a {
+        font-size: 15px;
+        margin-left: 2.2rem;
+    }
+}
 
+/* 768px and below (tablets portrait) */
+@media (max-width: 768px) {
+    .nav-bar a {
+        font-size: 14px;
+        margin-left: 1.5rem;
+    }
+}
+
+/* 425px and below (mobile large) */
+@media (max-width: 425px) {
+    #menu-icon {
+        display: block;
+        width: 35px;  /* auto smaller */
+        height: 35px;
+    }
+
+    .nav-bar {
+        display: none; /* hide full nav by default */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #000; /* adjust to your header background */
+        text-align: center;
+        padding: 1rem 0;
+        flex-direction: column;
+    }
+
+    .nav-bar a {
+        display: block;
+        font-size: 14px;
+        margin: 0.8rem 0;
+    }
+}
+
+/* 375px and below (mobile medium) */
+@media (max-width: 375px) {
+    #menu-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .nav-bar a {
+        font-size: 13px;
+    }
+}
+
+/* 320px and below (mobile small) */
+@media (max-width: 320px) {
+    #menu-icon {
+        width: 26px;
+        height: 26px;
+    }
+    .nav-bar a {
+        font-size: 12px;
+    }
+}
